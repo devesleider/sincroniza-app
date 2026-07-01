@@ -4,7 +4,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Icon from '@react-native-vector-icons/ionicons';
 
-import { DashboardScreen } from '../screens/dashboard/DashboardScreen';
+// import { DashboardScreen } from '../screens/dashboard/DashboardScreen';
 import { AppointmentsScreen } from '../screens/appointments/AppointmentsScreen';
 import { CreateAppointmentScreen } from '../screens/appointments/CreateAppointmentScreen';
 import { AppointmentDetailScreen } from '../screens/appointments/AppointmentDetailScreen';
@@ -61,7 +61,7 @@ export const MainNavigator = () => {
         headerShown: false,
       })}
     >
-      <Tab.Screen name="Dashboard" component={DashboardScreen} />
+      {/* <Tab.Screen name="Dashboard" component={DashboardScreen} /> */}
       <Tab.Screen name="Citas" component={AppointmentsStack} />
       <Tab.Screen name="Configuración" component={SettingsScreen} />
     </Tab.Navigator>
