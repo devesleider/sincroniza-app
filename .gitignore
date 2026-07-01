@@ -1,41 +1,106 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+# ================================
+# Sincroniza - React Native + Expo
+# ================================
 
-# dependencies
+# === Dependencias ===
 node_modules/
+.pnpm-store/
 
-# Expo
+# === Expo / React Native ===
 .expo/
 dist/
 web-build/
-expo-env.d.ts
-
-# Native
-.kotlin/
-*.orig.*
+android/
+ios/
 *.jks
 *.p8
 *.p12
 *.key
 *.mobileprovision
+*.orig.*
 
-# Metro
-.metro-health-check*
-
-# debug
+# === Archivos de caché ===
+*.log
 npm-debug.*
 yarn-debug.*
 yarn-error.*
-
-# macOS
-.DS_Store
-*.pem
-
-# local env files
-.env*.local
-
-# typescript
+pnpm-debug.*
+.eslintcache
 *.tsbuildinfo
+.cache/
+.parcel-cache/
+.metro-cache/
 
-# generated native folders
-/ios
-/android
+# === Archivos de entorno ===
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+
+# === Archivos de sistema ===
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
+*.pid
+*.seed
+*.pid.lock
+
+# === Archivos de editor ===
+.vscode/
+.idea/
+*.iml
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# === Archivos de cobertura / pruebas ===
+coverage/
+.nyc_output/
+*.lcov
+junit.xml
+
+# === Archivos de compilación ===
+*.pyc
+*.pyo
+__pycache__/
+
+# === Archivos de base de datos ===
+*.db
+*.sqlite
+*.sqlite3
+
+# === Archivos de backup ===
+*.bak
+*.tmp
+*.temp
+
+# === Archivos de compresión ===
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# === Archivos específicos de Expo ===
+expo-env.d.ts
+
+# === Archivos de dependencias (bloquear versiones) ===
+# Si usas pnpm, el lockfile es necesario para la consistencia
+# pero puedes ignorarlo si quieres que todos usen la misma versión
+# pnpm-lock.yaml
+
+# === Archivos de configuración de CI/CD ===
+# .github/
+# .gitlab/
+
+# === Archivos de logs de Metro ===
+metro-error.log
